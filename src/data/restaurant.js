@@ -12,6 +12,7 @@ export const restaurant = {
     line1: 'Nepres',
     line2: 'Ganjeo-ro 189, Naju, South Korea',
   },
+  addressKo: '전남광주통합특별시 나주시 대호동 312-6',
   // Standard Google Maps "embed via search query" URL — no API key required.
   mapEmbedSrc: 'https://www.google.com/maps?q=Ganjeo-ro+189,+Naju,+South+Korea&output=embed',
   hours: [

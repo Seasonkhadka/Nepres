@@ -41,7 +41,7 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wide text-navy-300">{t('Visit', '오시는 길')}</h3>
           <address className="mt-3 space-y-1 text-sm not-italic text-navy-200">
             <p>{restaurant.address.line1}</p>
-            <p>{restaurant.address.line2}</p>
+            <p>{restaurant.address.line2, restaurant.addressKo}</p>
             <p>
               <a href={restaurant.phoneHref} className="hover:text-white hover:underline">
                 {restaurant.phone}
