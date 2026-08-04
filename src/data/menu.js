@@ -477,12 +477,13 @@ export const menu = [
     cuisine: 'bar',
     type: 'list',
     items: [
-      { name: 'Cola', nameKo: '콜라', price: 2500, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 콜라.' },
+      { name: 'Cola', nameKo: '콜라', image: '/images/cola.jpg', price: 2500, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 콜라.' },
  
-      { name: 'Pepsi', nameKo: '펩시', price: 2000, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 펩시콜라.' },
+      { name: 'sprite', nameKo: '스프라이트', image: '/images/sprite.jpg', price: 2000, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 스프라이트.' },
       {
-        name: 'Fanta',
-        nameKo: '환타',
+        name: 'Chiya',
+        nameKo: '치아',
+        image: '/images/chiya.jpg',
         price: 2000,
         description: 'Carbonated orange-flavored soda.',
         descriptionKo: '오렌지 향 탄산음료.',
