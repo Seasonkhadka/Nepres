@@ -1,7 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
-import About from './pages/About'
 import Menu from './pages/Menu'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -12,7 +11,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        {/* About is now the #about section on the home page — keep old links/bookmarks working */}
         <Route path="/menu" element={<Menu />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />

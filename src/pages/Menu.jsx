@@ -125,7 +125,9 @@ export default function Menu() {
                         </dl>
                       )}
                       {item.description && (
-                        <p className="mt-1 text-xs text-navy-400 sm:text-xs">{t(item.description, item.descriptionKo)}</p>
+                        <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-navy-400">
+                          {t(item.description, item.descriptionKo)}
+                        </p>
                       )}
                     </div>
                   </article>

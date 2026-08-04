@@ -7,7 +7,6 @@ import { publicUrl } from '../../utils/publicUrl'
 
 const links = [
   { to: '/', en: 'Home', ko: '홈' },
-  { to: '/about', en: 'About', ko: '소개' },
   { to: '/menu', en: 'Menu', ko: '메뉴' },
   { to: '/gallery', en: 'Gallery', ko: '갤러리' },
   { to: '/contact', en: 'Contact', ko: '문의' },
