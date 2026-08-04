@@ -2,7 +2,7 @@
 // (Vite serves that folder as-is) — swap the file there, or point this at an
 // `import`ed file from src/assets instead if you'd rather bundle it.
 export const banner = {
-  image: '/images/Openingsoonbanner.png',
+  image: '/images/openingsoon.png',
   // This banner graphic already has its own logo/text baked in, so skip
   // overlaying our heading/subheading on top of it. Set to true for a plain
   // photo (interior/food shot) that needs text overlaid on it.

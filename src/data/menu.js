@@ -478,13 +478,7 @@ export const menu = [
     type: 'list',
     items: [
       { name: 'Cola', nameKo: '콜라', price: 2500, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 콜라.' },
-      {
-        name: 'Apple Soda',
-        nameKo: '애플 소다',
-        price: 2000,
-        description: 'Carbonated apple-flavored soda.',
-        descriptionKo: '사과 향 탄산음료.',
-      },
+ 
       { name: 'Pepsi', nameKo: '펩시', price: 2000, description: 'Classic carbonated cola.', descriptionKo: '클래식 탄산 펩시콜라.' },
       {
         name: 'Fanta',
@@ -504,30 +498,35 @@ export const menu = [
     items: [
       {
         name: 'Red Label',
+        image: '/images/redlabel.jpg',
         prices: [7000, 60000, 85000],
         description: 'Johnnie Walker Red Label — blended Scotch whisky, no age statement, bold and peppery.',
         descriptionKo: '조니워커 레드라벨 — 숙성 연수 표기 없는 블렌디드 스카치 위스키, 강렬하고 스파이시한 풍미.',
       },
       {
-        name: 'Signature',
+        name: 'Honey hunter',
+        image: '/images/honeyhunter.jpg',
         prices: [7000, 55000, 80000],
         description: 'Signature — Indian blended whisky made from aged Indian malt and Scotch.',
         descriptionKo: '시그니처 — 숙성된 인도산 몰트와 스카치를 블렌딩한 인도산 위스키.',
       },
       {
         name: 'Khukri Rum',
+        image: '/images/khukurirum.jpg',
         prices: [7000, 55000, 70000],
         description: "Khukri Rum — Nepal's classic dark rum, distilled from molasses and cask-aged.",
         descriptionKo: '쿠크리 럼 — 당밀을 증류해 오크통에 숙성한 네팔 대표 다크 럼.',
       },
       {
-        name: 'Black Label',
+        name: 'Old Durbar Black chimney',
+        image: '/images/odchimney.jpg',
         prices: [7000, 80000, 90000],
         description: 'Johnnie Walker Black Label — blended Scotch whisky aged a minimum of 12 years.',
         descriptionKo: '조니워커 블랙라벨 — 최소 12년 숙성한 블렌디드 스카치 위스키.',
       },
       {
         name: 'Old Durbar',
+        image: '/images/odtwocontinental.jpg',
         prices: [6000, 70000, 85000],
         description: "Old Durbar — Nepal's premium whisky blended with Scotch malt aged in American oak.",
         descriptionKo: '올드 더르바 — 아메리칸 오크통에 숙성한 스카치 몰트를 블렌딩한 네팔의 프리미엄 위스키.',
@@ -542,12 +541,18 @@ export const menu = [
     items: [
       {
         name: 'Soju',
+        image: '/images/soju.jpg',
         nameKo: '소주',
         price: 5000,
         description: "Korea's classic clear distilled spirit.",
         descriptionKo: '한국의 대표적인 증류 소주.',
       },
-      { name: 'Maekju', nameKo: '맥주', price: 5000, description: 'Cold draft beer.', descriptionKo: '시원한 생맥주.' },
+      { name: 'Maekju', nameKo: '맥주', 
+        image: '/images/beer.jpg',
+        price: 5000, 
+        description: 'Cold draft beer.', 
+        descriptionKo: '시원한 생맥주.' 
+      },
     ],
   },
   {
@@ -559,6 +564,7 @@ export const menu = [
       {
         name: 'Any Flavour',
         nameKo: '모든 맛',
+        image: '/images/hookha.png',
         price: 10000,
         description: 'Ask your server for available flavours.',
         descriptionKo: '이용 가능한 맛은 직원에게 문의하세요.',
