@@ -3,6 +3,7 @@ import { banner } from '../data/banner'
 import { restaurant } from '../data/restaurant'
 import { useLanguage } from '../context/LanguageContext'
 import PlaceholderImage from '../components/common/PlaceholderImage'
+import { publicUrl } from '../utils/publicUrl'
 
 const highlights = [
   {
@@ -33,7 +34,7 @@ export default function Home() {
         <section>
           {banner.image ? (
             <img
-              src={banner.image}
+              src={publicUrl(banner.image)}
               alt={t(banner.heading, banner.headingKo)}
               className="max-h-[80vh] w-full object-cover"
             />
@@ -52,7 +53,7 @@ export default function Home() {
       ) : (
         <section className="relative overflow-hidden">
           {banner.image ? (
-            <img src={banner.image} alt="" className="absolute inset-0 h-full w-full object-cover" />
+            <img src={publicUrl(banner.image)} alt="" className="absolute inset-0 h-full w-full object-cover" />
           ) : (
             <PlaceholderImage className="absolute inset-0 h-full w-full" />
           )}

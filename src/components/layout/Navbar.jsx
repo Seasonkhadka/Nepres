@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { restaurant } from '../../data/restaurant'
 import { useLanguage } from '../../context/LanguageContext'
 import LanguageToggle from '../common/LanguageToggle'
+import { publicUrl } from '../../utils/publicUrl'
 
 const links = [
   { to: '/', en: 'Home', ko: '홈' },
@@ -26,7 +27,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-navy-100 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-[1800px] items-center justify-between px-4 py-3 sm:px-8 lg:px-12 2xl:px-16">
         <NavLink to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src="/images/Logonobg.png" alt={restaurant.name} className="h-9 w-auto" />
+          <img src={publicUrl('/images/Logonobg.png')} alt={restaurant.name} className="h-9 w-auto" />
         </NavLink>
 
         <nav aria-label="Main navigation" className="hidden items-center gap-8 md:flex">

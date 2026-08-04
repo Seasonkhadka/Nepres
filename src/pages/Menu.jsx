@@ -3,6 +3,7 @@ import { menu, cuisines } from '../data/menu'
 import { restaurant } from '../data/restaurant'
 import { useLanguage } from '../context/LanguageContext'
 import PlaceholderImage from '../components/common/PlaceholderImage'
+import { publicUrl } from '../utils/publicUrl'
 
 function slugify(text) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-')
@@ -89,7 +90,7 @@ export default function Menu() {
                     className="overflow-hidden rounded-xl border border-navy-100 bg-white shadow-sm transition-shadow hover:shadow-md"
                   >
                     {item.image ? (
-                      <img src={item.image} alt={item.name} className="aspect-[4/3] w-full object-cover" />
+                      <img src={publicUrl(item.image)} alt={item.name} className="aspect-[4/3] w-full object-cover" />
                     ) : (
                       <PlaceholderImage label={item.name} className="aspect-[4/3] w-full" />
                     )}

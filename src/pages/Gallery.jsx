@@ -1,6 +1,7 @@
 import { galleryPhotos } from '../data/gallery'
 import PlaceholderImage from '../components/common/PlaceholderImage'
 import { useLanguage } from '../context/LanguageContext'
+import { publicUrl } from '../utils/publicUrl'
 
 export default function Gallery() {
   const { t } = useLanguage()
@@ -21,7 +22,7 @@ export default function Gallery() {
           photo.image ? (
             <img
               key={photo.id}
-              src={photo.image}
+              src={publicUrl(photo.image)}
               alt={photo.alt}
               loading="lazy"
               className="aspect-square w-full rounded-lg object-cover"

@@ -1,6 +1,7 @@
 import PlaceholderImage from '../components/common/PlaceholderImage'
 import { restaurant } from '../data/restaurant'
 import { useLanguage } from '../context/LanguageContext'
+import { publicUrl } from '../utils/publicUrl'
 
 // Placeholder copy — swap in your real story once you're ready.
 export default function About() {
@@ -15,7 +16,7 @@ export default function About() {
         {t(`About ${restaurant.name}`, `${restaurant.name} 소개`)}
       </h1>
 
-      <img src="/images/building.jpg" alt="Restaurant interior" className="mt-10 aspect-video w-full rounded-lg" />
+      <img src={publicUrl('/images/building.jpg')} alt="Restaurant interior" className="mt-10 aspect-video w-full rounded-lg" />
 
       <div className="mt-10 space-y-6 text-navy-700">
         <p>
