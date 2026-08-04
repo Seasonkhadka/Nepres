@@ -26,3 +26,14 @@
     @apply outline-none ring-2 ring-crimson-500 ring-offset-2 ring-offset-cream;
   }
 }
+
+@layer utilities {
+  /* Hide scrollbar on slideable/swipeable strips while keeping touch & drag scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
