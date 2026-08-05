@@ -43,6 +43,10 @@ function formatPrice(price) {
   return `${restaurant.currency}${price.toLocaleString()}`
 }
 
+function itemPrice(item) {
+  return item.prices ? `${formatPrice(item.prices[0])}+` : formatPrice(item.price)
+}
+
 export default function Home() {
   const { t } = useLanguage()
 
@@ -190,7 +194,7 @@ export default function Home() {
                 <li key={item.name} className="flex items-baseline justify-between gap-4 py-3">
                   <span className="font-display text-lg text-navy-900">{t(item.name, item.nameKo)}</span>
                   <span className="flex-1 border-b border-dotted border-navy-300" aria-hidden="true" />
-                  <span className="whitespace-nowrap font-semibold text-crimson-600">{formatPrice(item.price)}</span>
+                  <span className="whitespace-nowrap font-semibold text-crimson-600">{itemPrice(item)}</span>
                 </li>
               ))}
             </ul>
