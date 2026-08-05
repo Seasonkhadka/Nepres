@@ -91,6 +91,7 @@ export const menu = [
       {
         name: 'Spring Rolls (2pc)',
         nameKo: '스프링 롤 (2개)',
+        image: '/images/springrolls.jpeg',
         price: 7000,
         description: 'Crisp fried rolls filled with cabbage, carrot, and glass noodles, served with a sweet chili dip.',
         descriptionKo: '양배추, 당근, 당면을 채워 튀긴 바삭한 롤. 스위트 칠리 소스를 곁들임.',
@@ -159,17 +160,12 @@ export const menu = [
       {
         name: 'Bhutuwa',
         nameKo: '부뚜와',
+        image: '/images/porkbhutuwa.jpg',
         price: 7000,
         description: 'Spicy pan-fried meat tossed with garlic, ginger, and Nepali spices.',
         descriptionKo: '마늘, 생강, 네팔 향신료로 볶아낸 매콤한 고기 요리.',
       },
-      {
-        name: 'Bhatmas Sadeko',
-        nameKo: '밧마스 사데코',
-        price: 7000,
-        description: 'Roasted black soybeans tossed with tomato, onion, chili, and mustard oil.',
-        descriptionKo: '토마토, 양파, 고추, 겨자기름에 버무린 볶은 검은콩.',
-      },
+     
       {
         name: 'Sukuti (Pork)',
         image: '/images/sukuti.jpg',
@@ -181,6 +177,7 @@ export const menu = [
       {
         name: 'Choila (Pork)',
         nameKo: '초일라 (돼지고기)',
+        image: '/images/porkchoila.jpg',
         price: 10000,
         description: 'Smoky grilled pork tossed in mustard oil, garlic, ginger, and chili.',
         descriptionKo: '겨자기름, 마늘, 생강, 고추에 버무린 훈제 구이 돼지고기.',
@@ -194,8 +191,17 @@ export const menu = [
         descriptionKo: '양파, 마늘, 고추와 함께 부친 소시지.',
       },
       {
+        name: 'Bhatmas Sadeko',
+        nameKo: '밧마스 사데코',
+        image: '/images/bhatmas sadeko.jpg',
+        price: 7000,
+        description: 'Roasted black soybeans tossed with tomato, onion, chili, and mustard oil.',
+        descriptionKo: '토마토, 양파, 고추, 겨자기름에 버무린 볶은 검은콩.',
+      },
+      {
         name: 'Mustangyae Aloo',
         nameKo: '무스탕 알루',
+        image: '/images/mustangaloo.jpg',
         price: 8000,
         description: 'Mustang-style spiced potatoes pan-tossed with chili, garlic, and Himalayan herbs.',
         descriptionKo: '고추, 마늘, 히말라야 허브로 볶아낸 무스탕식 감자 요리.',
@@ -257,7 +263,7 @@ export const menu = [
     items: [
       {
         name: 'Veg Chowmin',
-        image: '/images/chawmin.jpg',
+        image: '/images/vegchawmin.jpg',
         nameKo: '야채 초우민',
         price: 9000,
         description: 'Stir-fried noodles with cabbage, carrot, capsicum, and soy sauce.',
@@ -266,6 +272,7 @@ export const menu = [
       {
         name: 'Sukuti Chowmin',
         nameKo: '수쿠티 초우민',
+        image: '/images/sukutichawmin.jpg',
         price: 11000,
         description: 'Stir-fried noodles with spicy dried pork (sukuti), cabbage, and soy sauce.',
         descriptionKo: '매콤한 돼지고기 육포(수쿠티), 양배추를 간장에 볶은 국수.',
@@ -273,6 +280,7 @@ export const menu = [
       {
         name: 'Veg Thukpa',
         nameKo: '떡빠',
+        image: '/images/vegthukpa.jpg',
         price: 10000,
         description: 'Wheat noodles and vegetables in a garlic-ginger broth with cumin and turmeric.',
         descriptionKo: '마늘생강 육수에 커민과 강황을 더한 야채 국수 수프.',
@@ -280,6 +288,7 @@ export const menu = [
       {
         name: 'Chicken Thukpa',
         nameKo: '치킨 떡빠',
+        image: '/images/chickenthukpa.jpg',
         price: 12000,
         description: 'Wheat noodles and chicken in a garlic-ginger broth with cumin and turmeric.',
         descriptionKo: '마늘생강 육수에 커민과 강황을 더한 치킨 국수 수프.',
@@ -287,6 +296,7 @@ export const menu = [
       {
         name: 'Keema Noodles (Pork Keema)',
         nameKo: '끼마 누들 (돼지고기 끼마)',
+        image: '/images/keemanoodle.jpg',
         price: 10000,
         description: 'Noodles stir-fried with spiced minced pork, onion, and garam masala.',
         descriptionKo: '다진 돼지고기, 양파, 가람 마살라로 볶은 국수.',
